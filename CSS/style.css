@@ -64,17 +64,52 @@ padding-top: 40px;
 } */
 
 .startInfo {
+	margin: 0 auto;
+	width: 50%;
 	font-size : 50px;
 	font-weight : bold;
 	font-family : 'Caveat', cursive;
 	text-align : center;
-	padding-top: 40px;
+	background-color: #64481ab6;
+	border-radius: 40px;
 	z-index: 2;
 }
 
-.startGame {
-	text-align: center;
-	background-color: #8a5111;
-   margin: 0 auto;
-   z-index: 2;
+a.btn--orange {
+	font-size : 45px;
+	font-family : 'Caveat', cursive;
+	color: #fff;
+	background-color: #a07229;
+	border-bottom: 5px solid #64481a;
+	z-index: 2;
+}
+a.btn--orange:hover {
+	margin-top: 3px;
+	color: #fff;
+	background: #c39243;
+	border-bottom: 2px solid #8b682f;
+}
+a.btn--shadow {
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+a.btn--green {
+	font-size : 13px;
+	font-family : 'Caveat', cursive;
+	color: #fff;
+	background-color: #23886a;
+	border-bottom: 5px solid #1c553a;
+	z-index: 2;
+	height: 40px;
+}
+a.btn--green:hover {
+	margin-top: 3px;
+	color: #fff;
+	background: #23886a;
+	border-bottom: 2px solid #1c553a;
+}
+a.btn--shadow2 {
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
