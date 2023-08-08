@@ -71,3 +71,10 @@ padding-top: 40px;
 	padding-top: 40px;
 	z-index: 2;
 }
+
+.startGame {
+	text-align: center;
+	background-color: #8a5111;
+   margin: 0 auto;
+   z-index: 2;
+}
