@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.5;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: #212529;
+	border-radius: 0.5rem;
+}
+
+/* ここからトップページ */
+.container {
+padding-top: 40px;
+}
+
+.gameTitle {
+	margin: 0 auto;
+	width: 60%;
+	font-size : 150px;
+	font-weight : bold;
+	font-family : 'Caveat', cursive;
+	text-align : center;
+	background-color: #c39243a4;
+	border: dashed 8px #8a5111;
+	z-index: 2;
+}
+
+/* .gameTitle {
+	font-size : 150px;
+	font-weight : bold;
+	font-family : 'Caveat', cursive;
+	text-align : center;
+	padding-top: 40px;
+	z-index: 2;
+	border:30px solid transparent;
+	border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" stroke="none" fill="%23ddddff"><circle cx="22" cy="30" r="16"/><circle cx="38" cy="30" r="16"/><circle cx="30" cy="22" r="16"/><circle cx="30" cy="38" r="16"/></svg>') 15 fill/15px round;
+} */
+
+.startInfo {
+	font-size : 50px;
+	font-weight : bold;
+	font-family : 'Caveat', cursive;
+	text-align : center;
+	padding-top: 40px;
+	z-index: 2;
+}
