@@ -113,3 +113,13 @@ a.btn--shadow2 {
 	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
+
+/* ゲームページ */
+.gameTitle_coffee {
+	color: #b84c00;
+	background-color: rgb(37, 37, 37);
+	font-size : 15px;
+	font-weight : bold;
+	font-family : 'Caveat', cursive;
+	text-align : start;
+}

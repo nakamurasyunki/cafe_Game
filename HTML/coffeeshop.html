@@ -6,14 +6,66 @@
 	<meta name="theme-color" content="#000000">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css2?family=Caveat&display=swap' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="CSS/style.css" />
-	<link rel="stylesheet" href="CSS/backGround.css" />
+	<link rel="stylesheet" href="../CSS/style.css" />
+	<link rel="stylesheet" href="../CSS/gamePage.css" />
 	<title>Coffee Shop</title>
 </head>
-<body>
-  <div>Coffee</div>
+<body background="../IMG/shop.jpg">
+	<div class="container-fluid gameBackImg">
+		<div class="row">
+			<div class="gameTitle_coffee">Coffee Shop</div>
+		</div>
+		<div class="row mt-1">
+			<div class="col-3">
+					<!-- Modal -->
+					<button class="btn btn-primary" data-bs-toggle="modal" href="#resultModalToggle" role="button" id="modalButton"></button>
+					<div class="modal fade" id="resultModalToggle" aria-hidden="true" aria-labelledby="resultModalToggleLabel" tabindex="-1">
+							<div class="modal-dialog modal-dialog-centered modal-lg">
+									<div class="modal-content">
+											<div class="modal-header">
+													<h5 class="modal-title" id="resultModalToggleLabel"></h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+													again? or back to the top page?
+											</div>
+											<div class="modal-footer">
+													<a type="button" href="2fingers.html" class="btn btn-danger modalBtn">again</a>
+													<a type="button" href="../index.html" class="btn btn-success modalBtn">Back to top</a>
+											</div>
+									</div>
+							</div>
+					</div>
+					<!-- Modal -->
+					<button class="btn btn-primary" data-bs-toggle="modal" href="#startModalToggle" role="button" id="startModalButton"></button>
+					<div class="modal fade" id="startModalToggle" aria-hidden="true" aria-labelledby="startModalToggleLabel" tabindex="-1">
+							<div class="modal-dialog modal-dialog-centered modal-sm">
+									<div class="modal-content startContent">
+											<div class="modal-header">
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="modalClose"></button>
+											</div>
+											<div class="modal-body gameStarted">
+													Game<br>Start
+											</div>
+											<div class="modal-footer">
+											</div>
+									</div>
+							</div>
+					</div>
+			</div>
+			<div class="col-2">
+					<div class="comName_Common">Com</div>
+			</div>
+			<div class="col-2 offset-5">
+					<a type="button" href="../index.html" class="btn btn-info backBtn">Back to Top</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="../JS/script.js"></script>
 </body>
 </html>
