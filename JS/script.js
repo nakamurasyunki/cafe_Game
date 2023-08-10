@@ -18,10 +18,6 @@ let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
 console.log(orderDrink)
 
 // 提供する飲み物
-/**
- * @param {*} drink 
- * @returns {*} // 提供した飲み物
- */
 function offerDrink(drink) {
   if (drink === "coffee"){
     return "coffee";
@@ -32,16 +28,33 @@ function offerDrink(drink) {
   }
 }
 
-test(offerDrink("coffee"),"coffee");
-test(offerDrink("milk"),"milk");
-test(offerDrink("cafe latte"),"cafe latte");
+let drink = offerDrink();
 
 // 注文された飲み物と提供した飲み物の比較
-// /**
-//  * @param {*} offer 
-//  * @param {*} order 
-//  * @returns {*} //
-//  */
-// function providedDrink(offer,order){
+function providedDrink(offer,order){
+  if (offer === order){
+    return "Thank You!!";
+  } else {
+    return "Sorry...,You are wrong";
+  }
+}
 
-// }
+let result = providedDrink();
+
+// test(providedDrink(drink,"coffee"));
+// test(providedDrink(drink,"milk"));
+// test(providedDrink(drink,"cafe latte"));
+
+
+const modalButton = document.querySelector("#modalButton");
+const resultModalToggleLabel = document.querySelector("#resultModalToggleLabel");
+const startModalButton = document.querySelector("#startModalButton");
+const modalClose = document.querySelector("#modalClose");
+
+async function startModal() {
+  await _sleep(2500);
+  modalClose.click();
+}
+
+startModalButton.click();
+startModal()
