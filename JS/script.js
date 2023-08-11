@@ -50,6 +50,7 @@ const modalButton = document.querySelector("#modalButton");
 const resultModalToggleLabel = document.querySelector("#resultModalToggleLabel");
 const startModalButton = document.querySelector("#startModalButton");
 const modalClose = document.querySelector("#modalClose");
+const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function startModal() {
   await _sleep(2500);
@@ -58,3 +59,25 @@ async function startModal() {
 
 startModalButton.click();
 startModal()
+
+// 男女ランダム
+const guestPerson = ["man","women"];
+
+let guestGender = guestPerson[Math.floor(Math.random() * guestPerson.length)];
+console.log(guestGender)
+
+// 性別画像判定
+const picsPerson = ["../IMG/man.jpg","../IMG/women.jpg"];
+let picsNumber = 0;
+console.log(picsNumber);
+
+function isGender(guestGender) {
+  if (guestGender === "man") {
+    picsNumber = 0;
+  } else {
+    picsNumber = 1;
+  }
+  console.log(picsNumber);
+  document.getElementById("guestPerson").src=picsPerson[picsNumber];
+}
+isGender(guestGender);

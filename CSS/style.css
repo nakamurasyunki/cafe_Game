@@ -182,3 +182,12 @@ a.btn--shadow2 {
     box-shadow: none;
     background: none;
 }
+#guestPerson {
+	margin: 6rem auto;
+	width: 20%;
+	height:20%;
+}
+.guestArea {
+	font-size: 15px;
+	color: #fff;
+}
