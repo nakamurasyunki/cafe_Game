@@ -1,0 +1,159 @@
+@media screen and (max-width: 1280px) {
+	
+	/* ここからトップページ */
+	.container {
+	padding-top: 40px;
+	}
+	
+	.gameTitle {
+		margin: 0 auto;
+		width: 60%;
+		font-size : 150px;
+		font-weight : bold;
+		font-family : 'Caveat', cursive;
+		text-align : center;
+		background-color: #c39243a4;
+		border: dashed 8px #8a5111;
+		z-index: 2;
+	}
+	
+	/* .gameTitle {
+		font-size : 150px;
+		font-weight : bold;
+		font-family : 'Caveat', cursive;
+		text-align : center;
+		padding-top: 40px;
+		z-index: 2;
+		border:30px solid transparent;
+		border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" stroke="none" fill="%23ddddff"><circle cx="22" cy="30" r="16"/><circle cx="38" cy="30" r="16"/><circle cx="30" cy="22" r="16"/><circle cx="30" cy="38" r="16"/></svg>') 15 fill/15px round;
+	} */
+	
+	.startInfo {
+		margin: 0 auto;
+		width: 50%;
+		font-size : 50px;
+		font-weight : bold;
+		font-family : 'Caveat', cursive;
+		text-align : center;
+		background-color: #64481ab6;
+		border-radius: 40px;
+		z-index: 2;
+	}
+	
+	a.btn--orange {
+		font-size : 45px;
+		font-family : 'Caveat', cursive;
+		color: #fff;
+		background-color: #a07229;
+		border-bottom: 5px solid #64481a;
+		z-index: 2;
+	}
+	a.btn--orange:hover {
+		margin-top: 3px;
+		color: #fff;
+		background: #c39243;
+		border-bottom: 2px solid #8b682f;
+	}
+	a.btn--shadow {
+		-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	}
+	
+	a.btn--green {
+		font-size : 13px;
+		font-family : 'Caveat', cursive;
+		color: #fff;
+		background-color: #23886a;
+		border-bottom: 5px solid #1c553a;
+		z-index: 2;
+		height: 40px;
+	}
+	a.btn--green:hover {
+		margin-top: 3px;
+		color: #fff;
+		background: #23886a;
+		border-bottom: 2px solid #1c553a;
+	}
+	a.btn--shadow2 {
+		-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	}
+	
+	/* ゲームページ */
+	.gameTitle_coffee {
+		color: #b84c00;
+		background-color: rgb(37, 37, 37);
+		font-size : 15px;
+		font-weight : bold;
+		font-family : 'Caveat', cursive;
+		text-align : start;
+	}
+	
+	
+	.backBtn{
+			font-family: "Arial Black";
+	}
+	
+	#modalButton {
+			display: none;
+	}
+	#startModalButton {
+			display: none;
+	}
+	.modal-content {
+			background-color: #000000b9;
+	}
+	.modal-title {
+			color: #ffffff;
+			font-size: 30px;
+			text-align: center;
+			font-family: "Arial Black";
+	}
+	.modal-body {
+			color: #ffffff;
+			font-size: 25px;
+			text-align: center;
+	}
+	.modal-header {
+			border: 0;
+			box-shadow: none;
+			background: none;
+			text-align: center;
+	}
+	.modal-footer {
+			border: 0;
+			box-shadow: none;
+			background: none;
+	}
+	.modalBtn {
+			font-size: 20px;
+			text-align: center;
+			font-family: "Arial Black";
+	}
+	.startContent {
+			background-color: #000000a4;
+	}
+	.gameStarted {
+			color: #bb3030;
+			font-size: 70px;
+			text-align: center;
+			font-family: "Arial Black";
+	}
+	#modalClose {
+			width: 1px;
+			height: 1px;
+			color: #000000ab;
+			border: 0;
+			box-shadow: none;
+			background: none;
+	}
+	#guestPerson {
+		margin: 6rem auto;
+		width: 20%;
+		height:20%;
+	}
+	.guestArea {
+		font-size: 15px;
+		color: #fff;
+	}
+}

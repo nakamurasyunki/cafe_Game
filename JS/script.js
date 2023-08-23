@@ -81,3 +81,28 @@ function isGender(guestGender) {
   document.getElementById("guestPerson").src=picsPerson[picsNumber];
 }
 isGender(guestGender);
+
+function fiveOrder(times) {
+  for (const time of times) {
+    if (time === 1) {
+      drink = offerDrink("coffee");
+    } else if (time === 2) {
+      drink = offerDrink("milk");
+    } else if (time === 3) {
+      drink = offerDrink("coffee");
+    } else if (time === 4) {
+      drink = offerDrink("cafe latte");
+    } else if (time === 5) {
+      drink = offerDrink("coffee");
+    }
+    console.log(drink);
+    result = providedDrink(drink,orderDrink);
+    console.log(result);
+    isGender(guestGender);
+    console.log(time);
+  }
+}
+
+const times = [1, 2, 3, 4, 5];
+
+console.log(fiveOrder(times));
