@@ -14,29 +14,52 @@ function test(actual, expected) {
 // ランダムで飲み物を注文
 const drinkMenu = ["Coffee", "Milk", "Cafe Latte"];
 
-let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
-document.getElementById("order").innerHTML = "Hi! " + orderDrink + " ,please!";
-console.log(orderDrink)
 
 // 提供する飲み物
-function offerDrink(drink) {
-  if (drink === "Coffee") {
-    return "Coffee";
-  } else if (drink === "Milk") {
-    return "Milk";
-  } else {
-    return "Cafe Latte";
+let selectDrink = "";
+let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
+for (let i = 1; i <= 5; i++) {
+  document.getElementById("order").innerHTML = "Hi! <br>Can I get a " + orderDrink + " ?";
+  document.getElementById("submitMenu").onclick = function () {
+    let drinkList = "Cafe Latte";
+    const drink = document.selectMenu.offer;
+
+    for (let i = 0; i < drink.length; i++) {
+      if (drink[i].checked) {
+        drinkList = drink[i].value;
+      }
+    }
+    selectDrink = drinkList;
+    console.log(selectDrink);
+    result = providedDrink(selectDrink, orderDrink);
+    if (result === true) {
+
+    }
+    isGender(guestGender);
+    console.log(i);
   }
 }
+"Thank You!!"
+"Sorry...,You are wrong"
+// function offerDrink(drink) {
+//   if (drink === "Coffee") {
+//     return "Coffee";
+//   } else if (drink === "Milk") {
+//     return "Milk";
+//   } else {
+//     return "Cafe Latte";
+//   }
+// }
 
-let drink = offerDrink();
+// let drink = offerDrink(selectDrink);
+// console.log(drink);
 
 // 注文された飲み物と提供した飲み物の比較
 function providedDrink(offer, order) {
   if (offer === order) {
-    return "Thank You!!";
+    return true;
   } else {
-    return "Sorry...,You are wrong";
+    return false;
   }
 }
 
@@ -84,21 +107,21 @@ function isGender(guestGender) {
 isGender(guestGender);
 
 
-for (let i = 1; i <= 5; i++) {
-  if (i === 1) {
-    drink = offerDrink("Coffee");
-  } else if (i === 2) {
-    drink = offerDrink("Milk");
-  } else if (i === 3) {
-    drink = offerDrink("Coffee");
-  } else if (i === 4) {
-    drink = offerDrink("Cafe Latte");
-  } else if (i === 5) {
-    drink = offerDrink("Coffee");
-  }
-  console.log(drink);
-  result = providedDrink(drink, orderDrink);
-  console.log(result);
-  isGender(guestGender);
-  console.log(i);
-}
+// for (let i = 1; i <= 5; i++) {
+//   if (i === 1) {
+//     selectDrink;
+//   } else if (i === 2) {
+//     selectDrink;
+//   } else if (i === 3) {
+//     selectDrink;
+//   } else if (i === 4) {
+//     selectDrink;
+//   } else if (i === 5) {
+//     selectDrink;
+//   }
+//   console.log(selectDrink);
+//   result = providedDrink(selectDrink, orderDrink);
+//   console.log(result);
+//   isGender(guestGender);
+//   console.log(i);
+// }

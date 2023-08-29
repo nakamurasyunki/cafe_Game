@@ -78,17 +78,23 @@
 			<fieldset class="offerSelect">
 				<legend>Choose Offer Drinks</legend>
 				<div class="offerDrink">
-					<label>
-						<input type="checkbox" id="coffee" name="Coffee">
-						Coffee
-					</label>
-					<label>
-						<input type="checkbox" id="milk" name="Milk">
-						Milk
-					</label>
-				</div>
-				<div>
-					<button type="submit">OK！</button>
+					<form name="selectMenu">
+						<label>
+							<input type="radio" name="offer" value="Coffee">
+							Coffee
+						</label>
+						<label>
+							<input type="radio" name="offer" value="Milk">
+							Milk
+						</label>
+						<label>
+							<input type="radio" name="offer" value="Cafe Latte">
+							Cafe Latte
+						</label>
+					</form>
+					<div>
+						<input type="button" id="submitMenu" class="btn" value="OK!">
+					</div>
 				</div>
 			</fieldset>
 		</div>
