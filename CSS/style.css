@@ -198,10 +198,13 @@ a.btn--shadow2 {
 }
 
 #guestPerson {
+	visibility: hidden;
 	position: relative;
 	margin: 6rem auto;
 	width: 20%;
 	height: 20%;
+	top: 0;
+	left: 0;
 }
 
 .guestArea {
@@ -210,6 +213,7 @@ a.btn--shadow2 {
 }
 
 .drinkOrder {
+	visibility: hidden;
 	position: absolute;
 	display: inline-block;
 	margin: 0 0 0 0;
@@ -260,6 +264,7 @@ a.btn--shadow2 {
 
 
 .offerSelect {
+	visibility: hidden;
 	position: relative;
 	bottom: 70px;
 	left: 150px;
