@@ -37,22 +37,34 @@ async function startModal() {
   fiveOrder();
 }
 
+function getPerson(guestGender) {
+  let picsNumber = 0;
+  if (guestGender === "man") {
+    picsNumber = 0;
+  } else if (guestGender === "women") {
+    picsNumber = 1;
+  } else if (guestGender === "man2") {
+    picsNumber = 2;
+  } else {
+    picsNumber = 3;
+  }
+  return picsNumber;
+}
 
 let changeFace;
 // 男女ランダム
 function randomPerson() {
-  const guestPerson = ["man", "women"];
+  const guestPerson = ["man", "women", "man2", "women2"];
 
   let guestGender = guestPerson[Math.floor(Math.random() * guestPerson.length)];
   changeFace = function (result) {
+    const picsNumber = getPerson(guestGender);
+    const happyPerson = ["../IMG/man_happy.jpg", "../IMG/women_happy.jpg", "../IMG/man2_happy.jpg", "../IMG/women2_happy.jpg"]
+    const angryPerson = ["../IMG/man_angry.jpg", "../IMG/women_sad.jpg", "../IMG/man2_angry.jpg", "../IMG/women2_sad.jpg"]
     if (result === true) {
-      aaa
+      document.getElementById("guestPerson").src = happyPerson[picsNumber];
     } else {
-      if (guestGender === "man") {
-        document.getElementById("guestPerson").src = "../IMG/man_angry.jpg";
-      } else {
-        document.getElementById("guestPerson").src = "../IMG/women_sad.jpg";
-      }
+      document.getElementById("guestPerson").src = angryPerson[picsNumber];
     }
   }
   return guestGender;
@@ -61,13 +73,8 @@ function randomPerson() {
 // 性別画像判定
 
 function isGender(guestGender) {
-  const picsPerson = ["../IMG/man.jpg", "../IMG/women.jpg"];
-  let picsNumber = 0;
-  if (guestGender === "man") {
-    picsNumber = 0;
-  } else {
-    picsNumber = 1;
-  }
+  const picsPerson = ["../IMG/man.jpg", "../IMG/women.jpg", "../IMG/man2.jpg", "../IMG/women2.jpg"];
+  const picsNumber = getPerson(guestGender);
   document.getElementById("guestPerson").src = picsPerson[picsNumber];
   return picsPerson[picsNumber];
 }
@@ -121,6 +128,7 @@ async function changePerson(counter) {
 
 // 提供する飲み物
 let counter = 0;
+let resultCounter = 0;
 function fiveOrder() {
   isGender(randomPerson());
   let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
@@ -141,6 +149,7 @@ function fiveOrder() {
     selectDrink = drinkList;
     result = providedDrink(selectDrink, orderDrink);
     if (result === true) {
+      resultCounter += 1;
       changeFace(result);
       document.getElementById("order").innerHTML = "Thank You!!";
     } else {
