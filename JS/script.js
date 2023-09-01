@@ -37,6 +37,8 @@ async function startModal() {
   fiveOrder();
 }
 
+let saveGender = "";
+
 function getPerson(guestGender) {
   let picsNumber = 0;
   if (guestGender === "man") {
@@ -73,12 +75,16 @@ function randomPerson() {
 // 性別画像判定
 
 function isGender(guestGender) {
-  const picsPerson = ["../IMG/man.jpg", "../IMG/women.jpg", "../IMG/man2.jpg", "../IMG/women2.jpg"];
-  const picsNumber = getPerson(guestGender);
-  document.getElementById("guestPerson").src = picsPerson[picsNumber];
-  return picsPerson[picsNumber];
+  if (guestGender !== saveGender) {
+    saveGender = guestGender;
+    const picsPerson = ["../IMG/man.jpg", "../IMG/women.jpg", "../IMG/man2.jpg", "../IMG/women2.jpg"];
+    const picsNumber = getPerson(guestGender);
+    document.getElementById("guestPerson").src = picsPerson[picsNumber];
+    return picsPerson[picsNumber];
+  } else {
+    fiveOrder();
+  }
 }
-isGender(randomPerson());
 
 // 実動作
 async function startGame() {
@@ -116,10 +122,11 @@ async function changePerson(counter) {
   document.querySelector("#guestPerson").style.visibility = "hidden";
   document.querySelector(".offerSelect").style.visibility = "hidden";
   document.querySelector("#guestPerson").style.left = 0 + "px";
-  await _sleep(2000);
   if (counter >= 5) {
+    await _sleep(500);
     window.location.href = "congratulations.html";
   } else {
+    await _sleep(1000);
     fiveOrder();
   }
 }
@@ -133,6 +140,7 @@ function fiveOrder() {
   isGender(randomPerson());
   let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
   counter += 1;
+  document.getElementsByClassName("guestCount")[0].innerHTML = `☕${counter}`
   console.log(counter);
   document.getElementById("order").innerHTML = "Hi! <br>Can I get a " + orderDrink + " ?";
   startGame();

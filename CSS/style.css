@@ -52,17 +52,6 @@ button.btn {
 	z-index: 2;
 }
 
-/* .gameTitle {
-	font-size : 150px;
-	font-weight : bold;
-	font-family : 'Caveat', cursive;
-	text-align : center;
-	padding-top: 40px;
-	z-index: 2;
-	border:30px solid transparent;
-	border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" stroke="none" fill="%23ddddff"><circle cx="22" cy="30" r="16"/><circle cx="38" cy="30" r="16"/><circle cx="30" cy="22" r="16"/><circle cx="30" cy="38" r="16"/></svg>') 15 fill/15px round;
-} */
-
 .startInfo {
 	margin: 0 auto;
 	width: 50%;
@@ -75,42 +64,26 @@ button.btn {
 	z-index: 2;
 }
 
-a.btn--orange {
-	font-size: 45px;
-	font-family: 'Caveat', cursive;
-	color: #fff;
-	background-color: #a07229;
-	border-bottom: 5px solid #64481a;
-	z-index: 2;
-}
-
-a.btn--orange:hover {
-	margin-top: 3px;
-	color: #fff;
-	background: #c39243;
-	border-bottom: 2px solid #8b682f;
-}
-
 a.btn--shadow {
 	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
-a.btn--green {
+a.btn--brown {
 	font-size: 13px;
 	font-family: 'Caveat', cursive;
 	color: #fff;
-	background-color: #23886a;
-	border-bottom: 5px solid #1c553a;
+	background-color: #885023;
+	border-bottom: 5px solid #553e1c;
 	z-index: 2;
 	height: 40px;
 }
 
-a.btn--green:hover {
-	margin-top: 3px;
+a.btn--brown:hover {
+	transform: translateY(3px);
 	color: #fff;
-	background: #23886a;
-	border-bottom: 2px solid #1c553a;
+	background: #886523;
+	border-bottom: 2px solid #553e1c;
 }
 
 a.btn--shadow2 {
@@ -128,9 +101,36 @@ a.btn--shadow2 {
 	text-align: start;
 }
 
+a.backBtn {
+	font-size: 20px;
+	height: 50px;
+}
 
-.backBtn {
-	font-family: "Arial Black";
+.todayVisit {
+	background: #64481a;
+	position: absolute;
+	float: left;
+	top: 50px;
+	left: 150px;
+}
+
+.todayVisit h1 {
+	margin: 0 auto;
+	position: relative;
+	top: -10px;
+	float: none;
+	text-align: center;
+	width: 150px;
+	font-family: 'Caveat', cursive;
+	font-weight: bold;
+	background: #FFF;
+}
+
+.guestCount {
+	text-align: center;
+	font-size: 25px;
+	width: 200px;
+	height: 40px;
 }
 
 #modalButton {
@@ -197,6 +197,11 @@ a.btn--shadow2 {
 	background: none;
 }
 
+.guestArea {
+	font-size: 15px;
+	color: #fff;
+}
+
 #guestPerson {
 	visibility: hidden;
 	position: relative;
@@ -207,18 +212,13 @@ a.btn--shadow2 {
 	left: 0;
 }
 
-.guestArea {
-	font-size: 15px;
-	color: #fff;
-}
-
 .drinkOrder {
 	visibility: hidden;
 	position: absolute;
 	display: inline-block;
 	margin: 0 0 0 0;
-	top: 200px;
-	left: 750px;
+	top: 170px;
+	left: 725px;
 	padding: 7px 10px;
 	width: auto;
 	color: #555;
@@ -262,11 +262,10 @@ a.btn--shadow2 {
 	color: #8a5111;
 }
 
-
 .offerSelect {
 	visibility: hidden;
 	position: relative;
-	bottom: 70px;
+	bottom: 50px;
 	left: 150px;
 	margin-bottom: 10px;
 	width: 25%;
