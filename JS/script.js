@@ -11,6 +11,23 @@ function test(actual, expected) {
   }
 }
 
+// 非同期文字
+window.WebFontConfig = {
+  google: { families: ['Lato:300,400,700', 'Caveat&display=swap'] },
+  active: function () {
+    sessionStorage.fonts = true;
+  }
+};
+
+(function () {
+  const wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  const s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+
 // ランダムで飲み物を注文
 const drinkMenu = ["Coffee", "Milk", "Cafe Latte"];
 
@@ -35,6 +52,16 @@ async function startModal() {
   await _sleep(2500);
   modalClose.click();
   fiveOrder();
+}
+
+function outputResult(resultCounter) {
+  if (resultCounter < 3) {
+    resultModalToggleLabel.innerHTML = "A little after. . . Let's do our best!"
+  } else if (resultCounter <= 4) {
+    resultModalToggleLabel.innerHTML = "Congratulations! You did your best!"
+  } else {
+    resultModalToggleLabel.innerHTML = "You are perfect and a genius!"
+  }
 }
 
 let saveGender = "";
@@ -73,7 +100,6 @@ function randomPerson() {
 }
 
 // 性別画像判定
-
 function isGender(guestGender) {
   if (guestGender !== saveGender) {
     saveGender = guestGender;
@@ -109,7 +135,8 @@ function offSelect() {
     select[i].checked = false;
   }
 }
-async function changePerson(counter) {
+
+async function changePerson(counter, resultCounter) {
   await _sleep(1000);
   document.querySelector(".drinkOrder").style.visibility = "hidden";
   offSelect();
@@ -124,7 +151,9 @@ async function changePerson(counter) {
   document.querySelector("#guestPerson").style.left = 0 + "px";
   if (counter >= 5) {
     await _sleep(500);
-    window.location.href = "congratulations.html";
+    modalButton.click();
+    outputResult(resultCounter);
+    // window.location.href = "congratulations.html";
   } else {
     await _sleep(1000);
     fiveOrder();
@@ -139,7 +168,11 @@ let resultCounter = 0;
 function fiveOrder() {
   isGender(randomPerson());
   let orderDrink = drinkMenu[Math.floor(Math.random() * drinkMenu.length)];
-  counter += 1;
+  if (counter >= 5) {
+    counter;
+  } else {
+    counter += 1;
+  }
   document.getElementsByClassName("guestCount")[0].innerHTML = `☕${counter}`
   console.log(counter);
   document.getElementById("order").innerHTML = "Hi! <br>Can I get a " + orderDrink + " ?";
@@ -164,7 +197,7 @@ function fiveOrder() {
       changeFace(result);
       document.getElementById("order").innerHTML = "Sorry...,You are wrong";
     }
-    changePerson(counter);
+    changePerson(counter, resultCounter);
   }
 }
 
