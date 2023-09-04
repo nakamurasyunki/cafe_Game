@@ -111,6 +111,14 @@ a.backBtn {
 	height: 50px;
 }
 
+a.thanksBtn {
+	text-align: center;
+	height: auto;
+	font-size: 25px;
+	margin: 0 auto;
+	width: auto;
+}
+
 .todayVisit {
 	background: #fcdaa4;
 	border: ridge 6px #64481a;
@@ -134,8 +142,11 @@ a.backBtn {
 }
 
 .guestCount {
+	position: relative;
+	top: -10px;
 	text-align: center;
 	color: rgb(88, 62, 23);
+	font-weight: bold;
 	font-size: 30px;
 	width: 200px;
 	height: 40px;
@@ -151,11 +162,12 @@ a.backBtn {
 
 .modal-content {
 	background-color: #000000b9;
+	text-align: center;
 }
 
 .modal-title {
 	color: #ffffff;
-	font-size: 30px;
+	font-size: 50px;
 	text-align: center;
 	font-family: "Arial Black";
 }
@@ -167,6 +179,7 @@ a.backBtn {
 }
 
 .modal-header {
+	display: block;
 	border: 0;
 	box-shadow: none;
 	background: none;
@@ -174,6 +187,7 @@ a.backBtn {
 }
 
 .modal-footer {
+	display: block;
 	border: 0;
 	box-shadow: none;
 	background: none;
@@ -270,35 +284,41 @@ a.backBtn {
 	color: #8a5111;
 }
 
-.offerSelect {
-	visibility: hidden;
-	position: relative;
-	bottom: 50px;
+fieldset.offerSelect {
+	visibility: visible;
+	position: absolute;
+	bottom: 25px;
 	left: 150px;
-	margin-bottom: 10px;
-	width: 25%;
-	height: 170px;
+	width: 27%;
+	height: 300px;
 	background-color: #006633;
 	border: ridge 5px #64481a;
+	font-family: 'Caveat', cursive;
+	font-weight: bold;
 }
 
 legend {
 	text-align: center;
-	font-size: 25px;
-	font-weight: bold;
+	font-size: 30px;
 	border: ridge 5px #64481a;
+	width: 300px;
 	float: none;
 	background-color: #8b682f;
 	padding: 3px 6px;
 }
 
-.offerDrink {
-	text-align: center;
-}
-
 .offerDrink label {
+	width: 200px;
+	display: block;
+	margin: 0 auto;
 	font-size: 25px;
 	color: bisque;
+	transform: scale(1.5)
+}
+
+.submitArea {
+	text-align: center;
+	margin-top: 25px;
 }
 
 #submitMenu {
@@ -307,4 +327,16 @@ legend {
 	background-color: #8a5111;
 	font-weight: bold;
 	font-size: 20px;
+	font-family: 'Caveat', cursive;
+	color: #fff;
+	background-color: #885023;
+	border-bottom: 5px solid #553e1c;
+	z-index: 2;
+}
+
+#submitMenu:hover {
+	transform: translateY(3px);
+	color: #fff;
+	background: #886523;
+	border-bottom: 2px solid #553e1c;
 }

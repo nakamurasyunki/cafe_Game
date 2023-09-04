@@ -56,9 +56,9 @@ async function startModal() {
 
 function outputResult(resultCounter) {
   if (resultCounter < 3) {
-    resultModalToggleLabel.innerHTML = "A little after. . . Let's do our best!"
+    resultModalToggleLabel.innerHTML = "A little after...<br>Let's do our best!"
   } else if (resultCounter <= 4) {
-    resultModalToggleLabel.innerHTML = "Congratulations! You did your best!"
+    resultModalToggleLabel.innerHTML = "Congratulations!<br> You did your best!"
   } else {
     resultModalToggleLabel.innerHTML = "You are perfect and a genius!"
   }
@@ -108,6 +108,8 @@ function isGender(guestGender) {
     document.getElementById("guestPerson").src = picsPerson[picsNumber];
     return picsPerson[picsNumber];
   } else {
+    console.log(`aaa${counter}`);
+    counter -= 1;
     fiveOrder();
   }
 }
@@ -132,7 +134,11 @@ function offSelect() {
   const select = document.selectMenu.offer;
 
   for (let i = 0; i < select.length; i++) {
-    select[i].checked = false;
+    if (i === 0) {
+      select[i].checked = true;
+    } else {
+      select[i].checked = false;
+    }
   }
 }
 
@@ -147,13 +153,11 @@ async function changePerson(counter, resultCounter) {
     await _sleep(150);
   }
   document.querySelector("#guestPerson").style.visibility = "hidden";
-  document.querySelector(".offerSelect").style.visibility = "hidden";
   document.querySelector("#guestPerson").style.left = 0 + "px";
   if (counter >= 5) {
     await _sleep(500);
     modalButton.click();
     outputResult(resultCounter);
-    // window.location.href = "congratulations.html";
   } else {
     await _sleep(1000);
     fiveOrder();

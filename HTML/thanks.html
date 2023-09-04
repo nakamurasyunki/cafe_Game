@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../CSS/thanks.css" />
+  <title>Congratulations</title>
+</head>
+
+<body>
+  <div class="thanksTitle">
+    <svg viewbox="0 0 100 20">
+      <defs>
+        <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="5%" stop-color="#c39243a4">
+            <stop offset="95%" stop-color="#123752">
+        </linearGradient>
+        <linearGradient></linearGradient>
+        <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+          <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+            mask="url(#mask)" fill="url(#gradient)">
+            <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0"
+              repeatCount="indefinite" />
+          </path>
+        </pattern>
+      </defs>
+      <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#wave)" fill-opacity="1">
+        Special Thanks</text>
+      <text text-anchor="middle" x="50" y="15" font-size="14" fill="url(#gradient)" fill-opacity="0.6">
+        Special Thanks</text>
+    </svg>
+  </div>
+  <div class="thanksBody">
+    20日間、皆さんと一緒に学べて楽しかったです。<br>
+    これからも共に頑張りましょう！！<br><br>
+    FND-19 <p>Shunki Nakamura</p>
+  </div>
+  <script src="../JS/script.js"></script>
+</body>
+
+</html>
