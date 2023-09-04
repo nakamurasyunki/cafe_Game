@@ -204,10 +204,14 @@ a.thanksBtn {
 }
 
 .gameStarted {
-	color: #bb3030;
+	color: #be8e41;
 	font-size: 70px;
 	text-align: center;
 	font-family: "Arial Black";
+}
+
+#resultModalToggleLabel {
+	color: #be8e41;
 }
 
 #modalClose {

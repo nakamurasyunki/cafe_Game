@@ -154,7 +154,7 @@ async function changePerson(counter, resultCounter) {
   }
   document.querySelector("#guestPerson").style.visibility = "hidden";
   document.querySelector("#guestPerson").style.left = 0 + "px";
-  if (counter >= 5) {
+  if (counter >= 1) {
     await _sleep(500);
     modalButton.click();
     outputResult(resultCounter);
