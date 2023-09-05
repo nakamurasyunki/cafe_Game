@@ -1,3 +1,4 @@
+// テスト駆動用コード
 function test(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {
     console.log("Test PASSED.");
@@ -11,7 +12,7 @@ function test(actual, expected) {
   }
 }
 
-// 非同期文字
+// 非同期フォント
 window.WebFontConfig = {
   google: { families: ['Lato:300,400,700', 'Caveat&display=swap'] },
   active: function () {
@@ -40,8 +41,6 @@ function providedDrink(offer, order) {
   }
 }
 
-let result = providedDrink();
-
 const modalButton = document.querySelector("#modalButton");
 const resultModalToggleLabel = document.querySelector("#resultModalToggleLabel");
 const startModalButton = document.querySelector("#startModalButton");
@@ -54,6 +53,7 @@ async function startModal() {
   fiveOrder();
 }
 
+// 正解数で言葉切替
 function outputResult(resultCounter) {
   if (resultCounter < 3) {
     resultModalToggleLabel.innerHTML = "A little after...<br>Let's do our best!"
@@ -63,9 +63,10 @@ function outputResult(resultCounter) {
     resultModalToggleLabel.innerHTML = "You are perfect and a genius!"
   }
 }
-
+// 性別保存用
 let saveGender = "";
 
+// 人に対して番号割り振り(画像の配列の要素抽出のためのインデックス番号)
 function getPerson(guestGender) {
   let picsNumber = 0;
   if (guestGender === "man") {
@@ -114,7 +115,7 @@ function isGender(guestGender) {
   }
 }
 
-// 実動作
+// 来店、席移動動作
 async function startGame() {
   let position = 2;
   document.querySelector("#guestPerson").style.width = position + "%";
@@ -142,6 +143,7 @@ function offSelect() {
   }
 }
 
+// 人替え
 async function changePerson(counter, resultCounter) {
   await _sleep(1000);
   document.querySelector(".drinkOrder").style.visibility = "hidden";
