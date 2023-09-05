@@ -178,7 +178,6 @@ function fiveOrder() {
     counter += 1;
   }
   document.getElementsByClassName("guestCount")[0].innerHTML = `☕${counter}`
-  console.log(counter);
   document.getElementById("order").innerHTML = "Hi! <br>Can I get a " + orderDrink + " ?";
   startGame();
   document.getElementById("submitMenu").onclick = function () {

@@ -19,7 +19,8 @@
 	<title>Cafe-Game</title>
 </head>
 
-<body background="IMG\coffee.jpg">
+<body background="IMG\coffee.jpg" id="bgm">
+	<audio preload="metadata" src="BGM/新緑芽吹く頃.mp3"></audio>
 	<div class="container">
 		<div class="gameTitle">Cafe Game</div>
 		<div class="startInfo mt-5">Click to Start the Game!</div>
@@ -32,7 +33,7 @@
 			</div>
 		</div>
 		<div class="row mt-5">
-			<a type="button" href="HTML/thanks.html"
+			<a type="button" href="HTML/thanks.html" id="startMusic"
 				class="btn btn--brown btn--cubic btn--shadow align-item-center justify-content-center thanksBtn">
 				Tap Here ...<!--<i class="fa-regular fa-thumbs-up"></i>-->
 			</a>
@@ -43,6 +44,7 @@
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/5c7ce3ed8f.js" crossorigin="anonymous"></script>
+	<script src="JS/music.js"></script>
 	<script src="JS/script.js"></script>
 </body>
 
