@@ -86,7 +86,7 @@ function randomPerson() {
   const guestPerson = ["man", "women", "man2", "women2"];
 
   let guestGender = guestPerson[Math.floor(Math.random() * guestPerson.length)];
-  changeFace = result => {
+  changeFace = function (result) {
     const picsNumber = getPerson(guestGender);
     const happyPerson = ["../IMG/man_happy.jpg", "../IMG/women_happy.jpg", "../IMG/man2_happy.jpg", "../IMG/women2_happy.jpg"]
     const angryPerson = ["../IMG/man_angry.jpg", "../IMG/women_sad.jpg", "../IMG/man2_angry.jpg", "../IMG/women2_sad.jpg"]
