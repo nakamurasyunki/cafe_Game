@@ -6,7 +6,7 @@ const audio = document.getElementsByTagName("audio")[0];
 
 if (page !== null) {
   page.addEventListener("click", function () {
-    audio.volume = 0.01;
+    audio.volume = 0.03;
     audio.loop = true;
     audio.play();
   })
