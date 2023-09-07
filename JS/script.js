@@ -109,7 +109,6 @@ function isGender(guestGender) {
     document.getElementById("guestPerson").src = picsPerson[picsNumber];
     return picsPerson[picsNumber];
   } else {
-    console.log(`aaa${counter}`);
     counter -= 1;
     fiveOrder();
   }
