@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1280px) {
 
 	*,
 	*:before,
@@ -305,7 +305,7 @@
 		display: inline-block;
 		margin: 0 0 0 0;
 		top: 300px;
-		left: 1090px;
+		left: 980px;
 		padding: 7px 10px;
 		width: auto;
 		color: #555;
