@@ -1,7 +1,17 @@
 body {
-    width: 100%;
+    width: 1280px;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     background-position: center;
+}
+
+@media (1750px < width <=3000px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: center;
+    }
 }
