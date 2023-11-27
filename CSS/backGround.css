@@ -1,8 +1,19 @@
 body {
-    width: 100%;
+    width: 1280px;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%, 100%;
     background-position: center;
     /* background-color: aqua; */
+}
+
+@media (1280px < width <=2000px) {
+    body {
+        width: 1920px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+        background-position: center;
+        /* background-color: aqua; */
+    }
 }
