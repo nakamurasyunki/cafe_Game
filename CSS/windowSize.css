@@ -1,406 +1,409 @@
-*,
-*:before,
-*:after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
-}
+@media (1270px <=width <=2000px) {
 
-html {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 62.5%;
-	visibility: hidden;
-}
+	*,
+	*:before,
+	*:after {
+		-webkit-box-sizing: inherit;
+		box-sizing: inherit;
+	}
 
-html.wf-active {
-	visibility: visible;
-}
+	html {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		font-size: 62.5%;
+		visibility: hidden;
+	}
 
-.btn,
-a.btn,
-button.btn {
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: 1.5;
-	position: relative;
-	display: inline-block;
-	padding: 1rem 4rem;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #212529;
-	border-radius: 0.5rem;
-}
+	html.wf-active {
+		visibility: visible;
+	}
 
-/* ===========================================================================================================================*/
-/* ここからトップページ */
-/* ===========================================================================================================================*/
-.container {
-	padding-top: 200px;
-}
+	.btn,
+	a.btn,
+	button.btn {
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.5;
+		position: relative;
+		display: inline-block;
+		padding: 1rem 4rem;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+		letter-spacing: 0.1em;
+		color: #212529;
+		border-radius: 0.5rem;
+	}
 
-.gameTitle {
-	margin: 0 auto;
-	width: 60%;
-	font-size: 150px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	text-align: center;
-	background-color: #c39243a4;
-	border: dashed 8px #8a5111;
-	z-index: 2;
-}
+	/* ===========================================================================================================================*/
+	/* ここからトップページ */
+	/* ===========================================================================================================================*/
+	.container {
+		padding-top: 200px;
+	}
 
-.startInfo {
-	margin: 0 auto;
-	width: 50%;
-	font-size: 50px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	text-align: center;
-	background-color: #64481ab6;
-	border-radius: 40px;
-	z-index: 2;
-}
+	.gameTitle {
+		margin: 0 auto;
+		width: 60%;
+		font-size: 150px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		text-align: center;
+		background-color: #c39243a4;
+		border: dashed 8px #8a5111;
+		z-index: 2;
+	}
 
-a.btn--shadow {
-	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-}
+	.startInfo {
+		margin: 0 auto;
+		width: 50%;
+		font-size: 50px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		text-align: center;
+		background-color: #64481ab6;
+		border-radius: 40px;
+		z-index: 2;
+	}
 
-a.btn--brown2 {
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	background-color: #b1672b;
-	border-bottom: 5px solid #8b652c;
-	z-index: 2;
-	height: 40px;
-}
+	a.btn--shadow {
+		-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	}
 
-a.btn--brown2:hover {
-	transform: translateY(3px);
-	color: #fff;
-	background: #b1672b;
-	border-bottom: 2px solid #8b652c;
-}
+	a.btn--brown2 {
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		background-color: #b1672b;
+		border-bottom: 5px solid #8b652c;
+		z-index: 2;
+		height: 40px;
+	}
+
+	a.btn--brown2:hover {
+		transform: translateY(3px);
+		color: #fff;
+		background: #b1672b;
+		border-bottom: 2px solid #8b652c;
+	}
 
 
-a.btn--brown {
-	font-size: 13px;
-	font-family: 'Caveat', cursive;
-	color: #fff;
-	background-color: #885023;
-	border-bottom: 5px solid #553e1c;
-	z-index: 2;
-	height: 40px;
-}
+	a.btn--brown {
+		font-size: 13px;
+		font-family: 'Caveat', cursive;
+		color: #fff;
+		background-color: #885023;
+		border-bottom: 5px solid #553e1c;
+		z-index: 2;
+		height: 40px;
+	}
 
-a.btn--brown:hover {
-	transform: translateY(3px);
-	color: #fff;
-	background: #886523;
-	border-bottom: 2px solid #553e1c;
-}
+	a.btn--brown:hover {
+		transform: translateY(3px);
+		color: #fff;
+		background: #886523;
+		border-bottom: 2px solid #553e1c;
+	}
 
-a.btn--shadow2 {
-	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-}
+	a.btn--shadow2 {
+		-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+		box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+	}
 
-a.btn--again {
-	font-size: 20px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	color: #fff;
-	background-color: #8c4200;
-	z-index: 2;
-	height: 50px;
-}
+	a.btn--again {
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		color: #fff;
+		background-color: #8c4200;
+		z-index: 2;
+		height: 50px;
+	}
 
-a.btn--back {
-	font-size: 20px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	color: #fff;
-	background-color: #109354;
-	z-index: 2;
-	height: 50px;
-}
+	a.btn--back {
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		color: #fff;
+		background-color: #109354;
+		z-index: 2;
+		height: 50px;
+	}
 
-/* ===========================================================================================================================*/
-/* ゲームページ */
-/* ===========================================================================================================================*/
-.gameTitle_coffee {
-	color: #b84c00;
-	background-color: rgb(37, 37, 37);
-	font-size: 15px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-	text-align: start;
-}
+	/* ===========================================================================================================================*/
+	/* ゲームページ */
+	/* ===========================================================================================================================*/
+	.gameTitle_coffee {
+		color: #b84c00;
+		background-color: rgb(37, 37, 37);
+		font-size: 15px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+		text-align: start;
+	}
 
-a.backBtn {
-	font-size: 20px;
-	height: 50px;
-	width: 200px;
-	margin-left: 150px;
-}
+	a.backBtn {
+		font-size: 20px;
+		height: 50px;
+		width: 200px;
+		margin-left: 150px;
+	}
 
-a.thanksBtn {
-	text-align: center;
-	height: auto;
-	font-size: 25px;
-	margin: 0 auto;
-	width: auto;
-}
+	a.thanksBtn {
+		text-align: center;
+		height: auto;
+		font-size: 25px;
+		margin: 0 auto;
+		width: auto;
+	}
 
-.todayVisit {
-	background: #fcdaa4;
-	border: ridge 6px #64481a;
-	position: absolute;
-	float: left;
-	top: 50px;
-	left: 300px;
-}
+	.todayVisit {
+		background: #fcdaa4;
+		border: ridge 6px #64481a;
+		position: absolute;
+		float: left;
+		top: 50px;
+		left: 300px;
+	}
 
-.todayVisit h1 {
-	margin: 0 auto;
-	position: relative;
-	top: -22px;
-	float: none;
-	text-align: center;
-	width: 150px;
-	font-family: 'Caveat', cursive;
-	font-weight: bold;
-	border: ridge 6px #64481a;
-	background: #FFF;
-}
+	.todayVisit h1 {
+		margin: 0 auto;
+		position: relative;
+		top: -22px;
+		float: none;
+		text-align: center;
+		width: 150px;
+		font-family: 'Caveat', cursive;
+		font-weight: bold;
+		border: ridge 6px #64481a;
+		background: #FFF;
+	}
 
-.guestCount {
-	position: relative;
-	top: -10px;
-	text-align: center;
-	color: rgb(88, 62, 23);
-	font-weight: bold;
-	font-size: 30px;
-	width: 200px;
-	height: 40px;
-}
+	.guestCount {
+		position: relative;
+		top: -10px;
+		text-align: center;
+		color: rgb(88, 62, 23);
+		font-weight: bold;
+		font-size: 30px;
+		width: 200px;
+		height: 40px;
+	}
 
-/* ========== modal ========== */
-#modalButton {
-	display: none;
-}
+	/* ========== modal ========== */
+	#modalButton {
+		display: none;
+	}
 
-#startModalButton {
-	display: none;
-}
+	#startModalButton {
+		display: none;
+	}
 
-.modal-content {
-	background-color: #000000b9;
-	text-align: center;
-}
+	.modal-content {
+		background-color: #000000b9;
+		text-align: center;
+	}
 
-.modal-title {
-	color: #ffffff;
-	font-size: 50px;
-	text-align: center;
-	font-family: 'Caveat', cursive;
-}
+	.modal-title {
+		color: #ffffff;
+		font-size: 50px;
+		text-align: center;
+		font-family: 'Caveat', cursive;
+	}
 
-.modal-body {
-	color: #ffffff;
-	font-size: 25px;
-	text-align: center;
-}
+	.modal-body {
+		color: #ffffff;
+		font-size: 25px;
+		text-align: center;
+	}
 
-.modal-header {
-	display: block;
-	border: 0;
-	box-shadow: none;
-	background: none;
-	text-align: center;
-}
+	.modal-header {
+		display: block;
+		border: 0;
+		box-shadow: none;
+		background: none;
+		text-align: center;
+	}
 
-.modal-footer {
-	display: block;
-	border: 0;
-	box-shadow: none;
-	background: none;
-}
+	.modal-footer {
+		display: block;
+		border: 0;
+		box-shadow: none;
+		background: none;
+	}
 
-.modalBtn {
-	font-size: 20px;
-	text-align: center;
-	font-family: 'Caveat', cursive;
-}
+	.modalBtn {
+		font-size: 20px;
+		text-align: center;
+		font-family: 'Caveat', cursive;
+	}
 
-.startContent {
-	background-color: #000000a4;
-	width: auto;
-}
+	.startContent {
+		background-color: #000000a4;
+		width: auto;
+	}
 
-.gameStarted {
-	color: #be8e41;
-	font-weight: bolder;
-	font-size: 70px;
-	text-align: center;
-	font-family: 'Caveat', cursive;
-	white-space: nowrap
-}
+	.gameStarted {
+		color: #be8e41;
+		font-weight: bolder;
+		font-size: 70px;
+		text-align: center;
+		font-family: 'Caveat', cursive;
+		white-space: nowrap
+	}
 
-.question {
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Caveat', cursive;
-}
+	.question {
+		font-size: 30px;
+		font-weight: bold;
+		font-family: 'Caveat', cursive;
+	}
 
-#resultModalToggleLabel {
-	font-size: 60px;
-	font-weight: bold;
-	color: #be8e41;
-	font-family: 'Caveat', cursive;
-}
+	#resultModalToggleLabel {
+		font-size: 60px;
+		font-weight: bold;
+		color: #be8e41;
+		font-family: 'Caveat', cursive;
+	}
 
-#modalClose {
-	width: 1px;
-	height: 1px;
-	color: #000000ab;
-	border: 0;
-	box-shadow: none;
-	background: none;
-}
+	#modalClose {
+		width: 1px;
+		height: 1px;
+		color: #000000ab;
+		border: 0;
+		box-shadow: none;
+		background: none;
+	}
 
-/* ========== drinkOrder ========== */
-.guestArea {
-	font-size: 15px;
-	color: #fff;
-}
+	/* ========== drinkOrder ========== */
+	.guestArea {
+		font-size: 15px;
+		color: #fff;
+	}
 
-#guestPerson {
-	visibility: hidden;
-	position: relative;
-	margin: 6rem auto;
-	width: 20%;
-	height: 20%;
-	top: 60px;
-	left: 0;
-}
+	#guestPerson {
+		visibility: hidden;
+		position: relative;
+		margin: 6rem auto;
+		width: 20%;
+		height: 20%;
+		top: 60px;
+		left: 0;
+	}
 
-.drinkOrder {
-	visibility: hidden;
-	position: absolute;
-	display: inline-block;
-	margin: 0 0 0 0;
-	top: 300px;
-	left: 980px;
-	padding: 7px 10px;
-	width: auto;
-	color: #555;
-	font-size: 16px;
-	background: #FFF;
-	border: solid 3px #555;
-	border-radius: 10px;
-	box-sizing: border-box;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-}
+	.drinkOrder {
+		visibility: hidden;
+		position: absolute;
+		display: inline-block;
+		margin: 0 0 0 0;
+		top: 300px;
+		left: 1090px;
+		padding: 7px 10px;
+		width: auto;
+		color: #555;
+		font-size: 16px;
+		background: #FFF;
+		border: solid 3px #555;
+		border-radius: 10px;
+		box-sizing: border-box;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
 
-.drinkOrder:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: -24px;
-	margin-top: -12px;
-	border: 12px solid transparent;
-	border-right: 12px solid #FFF;
-	z-index: 2;
-}
+	.drinkOrder:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -24px;
+		margin-top: -12px;
+		border: 12px solid transparent;
+		border-right: 12px solid #FFF;
+		z-index: 2;
+	}
 
-.drinkOrder:after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: -30px;
-	margin-top: -14px;
-	border: 14px solid transparent;
-	border-right: 14px solid #555;
-	z-index: 1;
-}
+	.drinkOrder:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: -30px;
+		margin-top: -14px;
+		border: 14px solid transparent;
+		border-right: 14px solid #555;
+		z-index: 1;
+	}
 
-#order {
-	display: inline-block;
-	font-size: 25px;
-	font-weight: bold;
-	color: #8a5111;
-}
+	#order {
+		display: inline-block;
+		font-size: 25px;
+		font-weight: bold;
+		color: #8a5111;
+	}
 
-/* ========== drinkOffer ========== */
-fieldset.offerSelect {
-	visibility: visible;
-	position: absolute;
-	bottom: 25px;
-	left: 250px;
-	width: 27%;
-	height: 300px;
-	background-color: #006633;
-	border: ridge 5px #64481a;
-	font-family: 'Caveat', cursive;
-	font-weight: bold;
-}
+	/* ========== drinkOffer ========== */
+	fieldset.offerSelect {
+		visibility: visible;
+		position: absolute;
+		bottom: 25px;
+		left: 250px;
+		width: 27%;
+		height: 300px;
+		background-color: #006633;
+		border: ridge 5px #64481a;
+		font-family: 'Caveat', cursive;
+		font-weight: bold;
+	}
 
-legend {
-	text-align: center;
-	font-size: 30px;
-	border: ridge 5px #64481a;
-	width: 300px;
-	float: none;
-	background-color: #8b682f;
-	padding: 3px 6px;
-}
+	legend {
+		text-align: center;
+		font-size: 30px;
+		border: ridge 5px #64481a;
+		width: 300px;
+		float: none;
+		background-color: #8b682f;
+		padding: 3px 6px;
+	}
 
-.offerDrink label {
-	width: 200px;
-	display: block;
-	margin: 0 auto;
-	font-size: 25px;
-	color: bisque;
-	transform: scale(1.5)
-}
+	.offerDrink label {
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+		font-size: 25px;
+		color: bisque;
+		transform: scale(1.5)
+	}
 
-.submitArea {
-	text-align: center;
-	margin-top: 25px;
-}
+	.submitArea {
+		text-align: center;
+		margin-top: 25px;
+	}
 
-#submitMenu {
-	text-align: center;
-	margin: 0 auto;
-	background-color: #8a5111;
-	font-weight: bold;
-	font-size: 20px;
-	font-family: 'Caveat', cursive;
-	color: #fff;
-	background-color: #885023;
-	border-bottom: 5px solid #553e1c;
-	z-index: 2;
-}
+	#submitMenu {
+		text-align: center;
+		margin: 0 auto;
+		background-color: #8a5111;
+		font-weight: bold;
+		font-size: 20px;
+		font-family: 'Caveat', cursive;
+		color: #fff;
+		background-color: #885023;
+		border-bottom: 5px solid #553e1c;
+		z-index: 2;
+	}
 
-#submitMenu:hover {
-	transform: translateY(3px);
-	color: #fff;
-	background: #886523;
-	border-bottom: 2px solid #553e1c;
+	#submitMenu:hover {
+		transform: translateY(3px);
+		color: #fff;
+		background: #886523;
+		border-bottom: 2px solid #553e1c;
+	}
 }
